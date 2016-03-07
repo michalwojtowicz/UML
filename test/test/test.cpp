@@ -9,9 +9,13 @@ using namespace std;
 int main()
 {
 	// tutaj dodajcie jakiœ kod
+	// krystian
+	for (int i = 0; i < 3; i++) {
 
-	cout << "test";
-	cout << "wojtek";
+		cout << "test";
+		cout << "wojtek";
+	}
+	
 
     return 0;
 }
