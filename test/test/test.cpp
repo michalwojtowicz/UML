@@ -8,6 +8,8 @@ using namespace std;
 
 int main()
 {
+	// tutaj dodajcie jakiœ kod
+
 	cout << "test";
 
     return 0;
