@@ -11,6 +11,7 @@ int main()
 	// tutaj dodajcie jakiœ kod
 
 	cout << "test";
+	cout << "wojtek";
 
     return 0;
 }
