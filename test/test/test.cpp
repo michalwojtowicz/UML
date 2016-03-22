@@ -15,8 +15,10 @@ int main()
 		cout << "test";
 		cout << "wojtek";
 		cout << "dawid";
+		cout << "piotrek";
 	}
 	
+	system("PAUSE");
 
     return 0;
 }
