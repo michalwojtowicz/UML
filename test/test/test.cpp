@@ -10,11 +10,12 @@ int main()
 {
 	// tutaj dodajcie jakiœ kod
 	// krystian
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 5; i++) {
 
 		cout << "test";
 		cout << "wojtek";
 		cout << "dawid";
+		cout << "piotrek";
 		cout << "piotrek";
 	}
 	
