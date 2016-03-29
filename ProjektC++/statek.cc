@@ -131,14 +131,21 @@ int  Sea:: getI() const{
 bool PartShip:: getStan(){
   return stan;
 }
-User:: User(Sea *sea): sea(sea){
+User:: User(Sea *sea,Screan *sc): sea(sea),sc(sc),I(0){
   std:: cout<< "created user"<< std:: endl;
 }
-void User:: shot(int x, int y, Sea *sea,Screan *sc){
+User:: ~User(){
+  for(int i = 0 ;i < I;i++){
+    delete(tab[i]);
+  }
+}
+int User:: shot(int x, int y, Sea *sea,Screan *sc,int *tab){
   if(sea -> check(x,y) == true){
     sc -> setField(x,y,9);
+    return 1;
   }else{
     sc -> setField(x,y,1);
+    return 0;
   }
 }
 bool Sea:: check(int x,int y){
@@ -156,25 +163,24 @@ void Screan:: setField(int x,int y,int stan){
 Sea:: ~Sea(){
   std:: cout <<"sea deleted" << std:: endl;
 }
-Computer:: Computer(Sea *sea,Screan *sc): sea(sea),sc(sc),I(0){
+Computer:: Computer(Sea *sea,Screan *sc):User(sea,sc){
 }
-void Computer:: createShip(int size,int id){
+void User:: createShip(int size,int id){
   Ship *s = new Ship(size,"Computer",sea,id);
   tab[I++] = s;
 }
-void Computer:: printShip(){
+void User:: printShip(){
   for(int i = 0 ;i < I;i++){
     tab[i] -> print();
   }
 }
 Computer:: ~Computer(){
-  for(int i = 0 ;i < I;i++){
-    delete(tab[i]);
-  }
 }
 void Computer:: autoLocation(){
   int tabInt[15][15];
+
   for(int i = 0; i < I;i++){
+   
     tab[i] -> move(rand()%15,rand()%15,'h');
   }
   for(int i = 0;i < 5;i++){
@@ -251,10 +257,14 @@ int Ship:: vec(int x){
     return -1;
   }
 }
-
-
-
-
+void Computer:: autoShot(bool *flag){
+  if(flag == false){
+    
+  }
+}
+int User:: getI(){
+  return I;
+}
 
 
 

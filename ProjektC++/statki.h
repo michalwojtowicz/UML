@@ -6,6 +6,9 @@
 class ship;
 class PartShip;
 class Screan;
+class Sea;
+
+
 
 class Sea{
 public:
@@ -61,10 +64,19 @@ private:
 };
 class User{
 public:
-  User(Sea *sea);
-  void shot(int x,int y,Sea *sea,Screan *sc);
-private:
+  User(Sea *sea,Screan *sc);
+  ~User();
   Sea *sea;
+  int shot(int x,int y,Sea *sea,Screan *sc,int *);
+  void createShip(int size,int id);
+  void printShip();
+  int getI();
+protected:
+    Screan *sc;
+  Ship *tab[5];
+   int I;
+   
+ 
   
 };
 class Screan{
@@ -79,19 +91,20 @@ private:
   bool tab[15][15];
   int tabInt[15][15];
 };
-class Computer{
+ class Computer: public User {
 public:
   Computer(Sea *sea,Screan *sc);
   ~Computer();
-  void createShip(int size,int id);
-  void printShip();
+  
+  
+  
   void autoLocation();
   void getSize();
+  void autoShot(bool *);
   
 private:
+  int flag = false;
   void clean(int **p);
-  int I;
-  Sea *sea;
-  Screan *sc;
-  Ship *tab[5];
+  
+ 
 };
