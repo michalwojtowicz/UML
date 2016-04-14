@@ -36,18 +36,9 @@ void Sea:: addPart(PartShip *p){
 }
 int Ship:: move(int x,int y,char diredtion){
    std:: cout << "x = " << x <<"y = " << y << std:: endl;
-  if(x < 0){
-    x = 0;
-  }if(x >= 14){
-    x = 14;
-    x -= size;
-  }if(y >= 14){
-    y = 14;
-    y =y - size;
-  }if(y < 0){
-    y = 0;
-  }
-  
+  x = corect(x); 
+  y = corect(y);
+     std:: cout << "Cx = " << x <<"Cy = " << y << std:: endl;
   
   for(int i = 0; i < size;++i){
     if(diredtion == 'v'){
@@ -133,17 +124,29 @@ bool PartShip:: getStan(){
 }
 User:: User(Sea *sea,Screan *sc): sea(sea),sc(sc),I(0){
   std:: cout<< "created user"<< std:: endl;
+    init(shotX);
+    init(shotY);
 }
+
+void User:: init(bool *t){
+  for(int i = 0;i < 15;i++){
+    t[i] = false;
+  }
+}
+
+
 User:: ~User(){
   for(int i = 0 ;i < I;i++){
     delete(tab[i]);
   }
 }
-int User:: shot(int x, int y, Sea *sea,Screan *sc,int *tab){
+int User:: shot(int x, int y, Sea *sea,Screan *sc){
   if(sea -> check(x,y) == true){
+    std:: cout << "true" << std:: endl;
     sc -> setField(x,y,9);
     return 1;
   }else{
+    std:: cout << "true" << std:: endl;
     sc -> setField(x,y,1);
     return 0;
   }
@@ -257,15 +260,37 @@ int Ship:: vec(int x){
     return -1;
   }
 }
-void Computer:: autoShot(bool *flag){
-  if(flag == false){
-    
-  }
+void Computer:: autoShot(Sea *seaW){
+ if(flag == false){
+    int x = random(shotX);
+    int y = random(shotY);
+    std:: cout <<"x: "<< x <<"y:"<< y<< std:: endl;
+   shot(x,y,seaW,sc);
+ }   
 }
 int User:: getI(){
   return I;
 }
 
+int Computer:: random(bool *t){
+  int i;
+ for(int i = 0; i < 20;i++){
+    i = rand() % 15;
+    if(t[i] == false){
+      t[i] = true;
+      return i;
+    }
+  }
+}
+int Ship:: corect(int x){
+    if(x < 0){
+    x = 0;
+   }else if(x >= 14){
+    x = 14;
+    x -= size;
+  }
+  return x;
+}
 
 
 

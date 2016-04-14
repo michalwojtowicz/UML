@@ -46,13 +46,15 @@ private:
 };
 
 class Ship{
+  
 public:
  Ship(int size,std:: string name,Sea *sea,int id);
  int move(int x,int y,char direction);
  void print();
  void autoMove();
+ 
 private:
-  int xY(int x);
+  int corect(int x);
   int vec(int x);
   int id;
   void addPart(PartShip *p);
@@ -62,19 +64,25 @@ private:
   int size;
   PartShip tab[5];
 };
+
+
 class User{
 public:
   User(Sea *sea,Screan *sc);
   ~User();
   Sea *sea;
-  int shot(int x,int y,Sea *sea,Screan *sc,int *);
+  int shot(int x,int y,Sea *sea,Screan *sc);
   void createShip(int size,int id);
   void printShip();
   int getI();
 protected:
+   bool shotX[15];
+   bool shotY[15];
     Screan *sc;
-  Ship *tab[5];
-   int I;
+    Ship *tab[5];
+    int I;
+private:
+  void init(bool *);
    
  
   
@@ -91,6 +99,8 @@ private:
   bool tab[15][15];
   int tabInt[15][15];
 };
+
+
  class Computer: public User {
 public:
   Computer(Sea *sea,Screan *sc);
@@ -100,9 +110,10 @@ public:
   
   void autoLocation();
   void getSize();
-  void autoShot(bool *);
+  void autoShot(Sea *);
   
 private:
+  int random(bool *t);
   int flag = false;
   void clean(int **p);
   
