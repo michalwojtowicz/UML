@@ -13,7 +13,7 @@ int main(){
   a -> createShip(5,2);
   a -> createShip(5,3);
   a -> autoLocation();
-  a -> autoShot(seaC);
+  a -> autoShot(sea);
   scren1.clean();
   scren1.read(sea);
   scren1.print();

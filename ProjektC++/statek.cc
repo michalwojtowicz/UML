@@ -134,26 +134,25 @@ void User:: init(bool *t){
   }
 }
 
-
 User:: ~User(){
   for(int i = 0 ;i < I;i++){
     delete(tab[i]);
   }
 }
-int User:: shot(int x, int y, Sea *sea,Screan *sc){
+bool User:: shot(int x, int y, Sea *sea,Screan *sc){
   if(sea -> check(x,y) == true){
     std:: cout << "true" << std:: endl;
     sc -> setField(x,y,9);
-    return 1;
+    return true;
   }else{
-    std:: cout << "true" << std:: endl;
+    std:: cout << "false" << std:: endl;
     sc -> setField(x,y,1);
-    return 0;
+    return false;
   }
 }
 bool Sea:: check(int x,int y){
   for(int i = 0; i < I;i++){
-    if(tab[i]->getX() == x  &&tab[i]-> getY() == y){
+    if(tab[i]->getX() == x  && tab[i]-> getY() == y){
       tab[i] -> setStan();
       return true;
     }
@@ -260,27 +259,45 @@ int Ship:: vec(int x){
     return -1;
   }
 }
-void Computer:: autoShot(Sea *seaW){
+void Computer:: autoShot(Sea *seaW,int x,int y){
  if(flag == false){
-    int x = random(shotX);
-    int y = random(shotY);
+   x = random(shotX);
+   y = random(shotY);
     std:: cout <<"x: "<< x <<"y:"<< y<< std:: endl;
-   shot(x,y,seaW,sc);
- }   
+    flag = shot(x,y,seaW,sc);
+    if(flag == true){
+      autoShot(seaW,x,y);
+    }
+ }else{
+   x = randaf(x);
+   y = randaf(y);
+   std:: cout <<"x: "<< x <<"y: "<< y<< std:: endl;
+   if(check(x,shotX) == true && check(y,shotY) == true){
+    std:: cout<< "dupa"<< std:: endl;
+    flag == shot(x,y,seaW,sc);
+    std:: cout<< "dupa1"<< std:: endl;
+    if(flag == true){
+         std:: cout<< "dupa2"<< std:: endl;
+       autoShot(seaW,x,y);
+    }
+   }else{
+     flag = false;
+     autoShot(seaW,5,6);
+   }
+ }  
 }
 int User:: getI(){
   return I;
 }
 
 int Computer:: random(bool *t){
-  int i;
- for(int i = 0; i < 20;i++){
-    i = rand() % 15;
-    if(t[i] == false){
-      t[i] = true;
-      return i;
-    }
-  }
+  int z;
+  bool stan = false;
+ for(int i = 0; i < 20 && stan == false ;i++){
+    z = rand() % 15;
+    stan = check(z,t);
+ }
+  return z;
 }
 int Ship:: corect(int x){
     if(x < 0){
@@ -290,6 +307,23 @@ int Ship:: corect(int x){
     x -= size;
   }
   return x;
+}
+bool Computer:: check(int x,bool *t){
+  
+    if(t[x] == false){
+	t[x] = true;
+	return true;
+    }else{
+      false;
+    }
+} 
+int Computer:: randaf(int x){
+  x = (rand() % 3) + (x - 1);
+  if(x < 0){
+    return 0;
+  }else if(x > 14){
+    return 14;
+  }
 }
 
 

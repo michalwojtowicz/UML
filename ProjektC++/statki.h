@@ -71,7 +71,7 @@ public:
   User(Sea *sea,Screan *sc);
   ~User();
   Sea *sea;
-  int shot(int x,int y,Sea *sea,Screan *sc);
+  bool shot(int x,int y,Sea *sea,Screan *sc);
   void createShip(int size,int id);
   void printShip();
   int getI();
@@ -110,10 +110,12 @@ public:
   
   void autoLocation();
   void getSize();
-  void autoShot(Sea *);
+  void autoShot(Sea *,int x = 0,int y = 9);
   
 private:
+  int randaf(int x);
   int random(bool *t);
+  bool check(int x,bool *t);
   int flag = false;
   void clean(int **p);
   
