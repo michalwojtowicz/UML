@@ -12,7 +12,7 @@ int main()
 	// krystian
 	for (int i = 0; i < 5; i++) {
 
-		
+		cout << "dupa";
 		cout << "tessat";
 		cout << "wojtek";
 		cout << "dawid";
