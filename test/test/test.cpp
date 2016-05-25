@@ -11,7 +11,7 @@ int main()
 	// tutaj dodajcie jakiœ kod
 	// krystian
 	for (int i = 0; i < 5; i++) {
-
+		cout << "lalala";
 		cout << "test";
 		cout << "wojtek";
 		cout << "dawid";
