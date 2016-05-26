@@ -1,3 +1,2 @@
 # UML
-sadadassxacsad
-dasd
+Server jest na linux
