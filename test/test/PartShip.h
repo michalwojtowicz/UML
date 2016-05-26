@@ -15,5 +15,6 @@ private:
 	int id;
 	bool stan;
 	int x;
+	int y;
 };
 
