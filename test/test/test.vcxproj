@@ -146,6 +146,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Computer.h" />
     <ClInclude Include="PartShip.h" />
     <ClInclude Include="Screan.h" />
     <ClInclude Include="Sea.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Computer.cpp" />
     <ClCompile Include="PartShip.cpp" />
     <ClCompile Include="Screan.cpp" />
     <ClCompile Include="Sea.cpp" />
