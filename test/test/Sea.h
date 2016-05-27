@@ -1,8 +1,7 @@
 #include "PartShip.h"
 
 
-class Sea
-{
+class Sea{
 public:
 	Sea();
 	~Sea();

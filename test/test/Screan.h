@@ -1,5 +1,5 @@
 #pragma once
-#include "Sea.h"
+#include "Ship.h"
 
 class Screan
 {
