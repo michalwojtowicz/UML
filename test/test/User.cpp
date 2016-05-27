@@ -8,6 +8,12 @@ User:: User(Sea *sea, Screan *sc) : sea(sea), sc(sc), I(0) {
 	init(shotX);
 	init(shotY);
 }
+User::User(Sea *sea, Screan *sc,SOCKET fd) : sea(sea), sc(sc), I(0),fd(fd) {
+	std::cout << "created user" << std::endl;
+	init(shotX);
+	init(shotY);
+}
+
 
 
 User::~User() {
@@ -47,7 +53,25 @@ void User::printShip() {
 	}
 }
 
-int User::getI() {
-	return I;
+bool User:: Mshot(int x,int y) {
+	char px = (char)x;
+	char py = (char) y;
+	char message[3];
+	message[0] = 'C';
+	message[1] = px;
+	message[2] = py;
+	
+	if (send(fd, message, 3, 0) < 0)
+	{
+		puts("Send failed");
+		return false;
+	}
+	
+	return true;
+
+}
+
+bool User::Check() {
+
 }
 
