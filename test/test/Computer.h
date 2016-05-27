@@ -15,7 +15,7 @@ private:
 	int randaf(int x);
 	int random(bool *t);
 	bool check(int x, bool *t);
-	int flag = false;
+	bool flag = false;
 	void clean(int **p);
 
 

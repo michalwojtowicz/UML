@@ -14,7 +14,7 @@ Ship::Ship(int size, Sea *sea, int id) :size(size), I(0), sea(sea), id(id) {
 }
 
 Ship::~Ship(){
-	//delete[] tab;
+	delete[] tab;
 }
 
 void Ship::addPart(PartShip *p) {
@@ -66,4 +66,24 @@ int Ship::corect(int x) {
 		x -= size;
 	}
 	return x;
+}
+
+void Ship::autoMove() {
+	int sum = 0;
+	int vectorX = 0;
+	int vectorY = 0;
+	for (int i = 0; i < size; ++i) {
+		int plus = sea->partMove(&tab[i], &vectorX, &vectorY);
+		if (plus == -1000) {
+			this->move(rand() % 10, rand() % 10, 'h');
+			std::cout << "tysiaoc" << std::endl;
+			return;
+		}
+		sum += plus;
+	}
+	vectorX = vec(vectorX);
+	vectorY = vec(vectorY);
+	int k = sum;
+	std::cout << "x:" << tab[0].getX() + (sum * vectorX) << "y: " << tab[0].getY() + (sum * vectorY) << std::endl;
+	this->move(tab[0].getX() + (sum * vectorX), tab[0].getY() + (sum * vectorY), 'h');
 }

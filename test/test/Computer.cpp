@@ -12,7 +12,7 @@ Computer::~Computer()
 }
 
 void Computer::autoLocation() {
-	int tabInt[10][10];
+
 
 	for (int i = 0; i < I; i++) {
 
@@ -52,7 +52,7 @@ bool Computer::check(int x, bool *t) {
 		return true;
 	}
 	else {
-		false;
+		return false;
 	}
 }
 
@@ -64,5 +64,37 @@ int Computer::randaf(int x) {
 	else if (x > 9) {
 		return 9;
 	}
+	else {
+		return x;
+	}
 }
 
+void Computer::autoShot(Sea *seaW, int x, int y) {
+	if (flag == false) {
+		x = random(shotX);
+		y = random(shotY);
+		std::cout << "x: " << x << "y:" << y << std::endl;
+		flag = shot(x, y, seaW, sc);
+		if (flag == true) {
+			autoShot(seaW, x, y);
+		}
+	}
+	else {
+		x = randaf(x);
+		y = randaf(y);
+		std::cout << "x: " << x << "y: " << y << std::endl;
+		if (check(x, shotX) == true && check(y, shotY) == true) {
+			std::cout << "dupa" << std::endl;
+			flag = shot(x, y, seaW, sc);
+			std::cout << "dupa1" << std::endl;
+			if (flag == true) {
+				std::cout << "dupa2" << std::endl;
+				autoShot(seaW, x, y);
+			}
+		}
+		else {
+			flag = false;
+			autoShot(seaW, 5, 6);
+		}
+	}
+}
