@@ -59,41 +59,27 @@ SOCKET initSocket() {
 
 int main(){
 
-	char c;
+	
+
 	SOCKET s = initSocket();
 	Sea sea;
 	Screan sc;
 	User a(&sea, &sc, s);
-
-	bool t = a.Mshot(1, 2);
-	char server_reply[2000];
-	int recv_size;
-
-	std:: cin >> c;
-
-	if ((recv_size = recv(s, server_reply, 2000, 0)) == SOCKET_ERROR)
-	{
-		puts("recv failed");
+	while (true) {
+		a.Check();
 	}
-
-	puts("Reply received\n");
-
-	//Add a NULL terminating character to make it a proper string before printing
-	server_reply[recv_size] = '\0';
-	puts(server_reply);
-
-
-	std::cin >> c;
-
-	a.Mshot(1, 2);
-
-	/*char* message = "Cdupa~";
-	if (send(s, message, strlen(message), 0) < 0)
-	{
-		puts("Send failed");
-		return 1;
-	}
-	puts("Data Send\n");
-	*/
+	/*int tab[10][10] = 
+					{{0,0,0,1,1,0,0,0,0,0},
+				    {0,0,1,0,0,0,1,1,0,0},
+				    {0,0,0,0,0,0,0,0,0,0},
+					{0,0,0,0,0,0,0,1,1,1},
+					{0,0,0,0,0,0,0,0,0,0},
+					{0,0,0,0,0,0,0,1,1,1},
+					{0,1,0,0,0,0,0,0,0,0}, 
+					{0,1,0,0,0,0,0,0,0,0},
+					{0,1,0,0,0,0,0,0,0,0},
+					{0,0,0,0,0,0,0,0,0,0},};
 	
+	a.ShipCreator(tab);
+	*/
 }

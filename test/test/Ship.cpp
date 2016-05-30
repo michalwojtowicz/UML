@@ -87,3 +87,4 @@ void Ship::autoMove() {
 	std::cout << "x:" << tab[0].getX() + (sum * vectorX) << "y: " << tab[0].getY() + (sum * vectorY) << std::endl;
 	this->move(tab[0].getX() + (sum * vectorX), tab[0].getY() + (sum * vectorY), 'h');
 }
+
