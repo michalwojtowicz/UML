@@ -3,7 +3,7 @@
 
 
 #include "stdafx.h"
-#undef UNICODE
+//#undef UNICODE
 
 #include <winsock2.h>
 #include <ws2tcpip.h>

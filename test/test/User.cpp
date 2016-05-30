@@ -93,7 +93,7 @@ bool User::Check() {
 	else if (server_reply[0] == 'S') {
 		bool t = shot((int)server_reply[1], (int)server_reply[2],sea ,sc);
 		if (t == true) {
-			message = "RT";
+			message = const_cast<char*>("RT");
 			if (send(fd, message, 2, 0) < 0)
 			{
 				puts("Send failed");
@@ -101,7 +101,8 @@ bool User::Check() {
 			}
 		}
 		else {
-			message = "RF";
+			message = const_cast<char*>("RF");
+			flag = true;
 			if (send(fd, message, 2, 0) < 0)
 			{
 				puts("Send failed");
@@ -111,9 +112,11 @@ bool User::Check() {
 	}
 	else if (server_reply[0] == 'R') {
 		if (server_reply[1] == 'T') {
+			flag = true;
 			std::cout << "trafiony" << std:: endl;
 		}
 		else {
+			flag = false;
 			std::cout << "pudlo" << std::endl;
 		}
 	}
