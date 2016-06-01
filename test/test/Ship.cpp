@@ -14,7 +14,7 @@ Ship::Ship(int size, Sea *sea, int id) :size(size), I(0), sea(sea), id(id) {
 }
 
 Ship::~Ship(){
-	delete[] tab;
+	//delete[] tab;
 }
 
 void Ship::addPart(PartShip *p) {
@@ -30,7 +30,7 @@ int Ship::move(int x, int y, char diredtion) {
 
 	for (int i = 0; i < size; ++i) {
 		if (diredtion == 'v') {
-			tab[i].setPlace(x, y - i);
+			tab[i].setPlace(x, y + i);
 		}
 		else if (diredtion == 'h') {
 			tab[i].setPlace(x + i, y);

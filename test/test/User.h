@@ -38,7 +38,7 @@ protected:
 	bool shotX[10];
 	bool shotY[10];
 	Screan *sc;
-	Ship *tab[5];
+	Ship *tab[15];
 	int I;
 private:
 	SOCKET fd;

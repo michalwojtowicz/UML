@@ -5,9 +5,9 @@
 #include <iostream>
 
 Screan::Screan(){
-	for (int i = 0; i < 15; ++i) {
+	for (int i = 0; i < 10; ++i) {
 
-		for (int j = 0; j < 15; ++j) {
+		for (int j = 0; j < 10; ++j) {
 			tab[i][j] = false;
 			tabInt[i][j] = 0;
 		}

@@ -134,14 +134,14 @@ CreatShip:: CreatShip(int a, int b,int c) : count(a),startx(b),starty(c)  {
 
 }
 
-bool User::ShipCreator(int tab[10][10]) {
+bool User::ShipCreator(int tabP[10][10]) {
 	std::vector<CreatShip *>a;
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
-			if (tab[i][j] == 1) {
+			if (tabP[i][j] == 1) {
 				if (Find(a, j, i) == -1) {
-					if (!CheckUp(tab, a, i, j)) {
-						CheckBc(tab, a, i, j);
+					if (!CheckUp(tabP, a, i, j)) {
+						CheckBc(tabP, a, i, j);
 					}
 				}
 			}
@@ -149,33 +149,43 @@ bool User::ShipCreator(int tab[10][10]) {
 	}
 	
 	for (int i = 0; i < a.size(); i++) {
-		std::cout << " x = " << a[i]->startx << "y = " << a[i]->starty << std::endl;
+		std::cerr << "dupa" << std:: endl;
+		createShip(a[i]->count, i);
+		tab[i]->move(a[i]->starty, a[i]->startx, a[i]->c);
+		std::cout << " SSx = " << a[i]->starty << "SSy = " << a[i]->startx <<a[i] -> count <<  std::endl;
 	}
 	return true;
 }
 
 bool User::CheckUp(int tab[10][10],std:: vector<CreatShip *>&a,int i,int j) {
 	if (tab[i][j] == 1) {
+	std::cout << "UP" << "y = " << i <<"x = " << j <<std::endl;
 		if (i > 0 && tab[i - 1][j] == 1) {
+			std::cout << "up" << "y = " << i << "x = "<< j <<std::endl;
 			CheckUp(tab, a, (i - 1), j);
 		}
 		else if (i == 0 || tab[i - 1][j] == 0) {
-			int i = 0;
-			i = Find(a, i, j);
-				if (i != -1) {
-					a[i]->count++;
-					a[i]->c = 'h';
+			int I = 0;
+			I = Find(a, i, j);
+				if (I != -1) {
+					std::cout << "trueUP" << std::endl;
+					a[I]->count++;
+					a[I]->c = 'v';
 					return true;
 				}
 				else {
+					std::cout << "falseUP" << std::endl;
 					return false;
 				}
 		}
 	}
+	std::cout << "falseUPW" << std::endl;
+	return true;
 }
 int Find(std:: vector<CreatShip *> &a, int x, int y) {
 	for (int i = 0; i < a.size(); i++) {
 		if (a[i]->startx == x && a[i]->starty == y) {
+			std::cout << "x" << a[i] -> startx <<"y" <<a[i] -> starty << std::endl;
 			return i;
 		}
 	}
@@ -184,25 +194,29 @@ int Find(std:: vector<CreatShip *> &a, int x, int y) {
 
 bool User::CheckBc(int tab[10][10], std::vector<CreatShip *>&a, int i, int j) {
 	if (tab[i][j] == 1) {
+		std::cout << "BC" << "x = " << j << "y=" << i << std::endl;
 		if (j > 0 && tab[i][j - 1] == 1) {
-			CheckUp(tab, a, i, j - 1);
+			std::cout << "bc" <<"x = "<< j<<"y=" << i<< std::endl;
+			CheckBc(tab, a, i, j - 1);
 		}
 		else if (j == 0 || tab[i][j - 1] == 0) {
 			int I = 0;
 			I = Find(a, i, j);
 			if (I != -1) {
+
 				a[I]->count++;
-				a[i]->c = 'h';
+				a[I]->c = 'h';
 				return true;
 			}
 			else {
 				a.push_back(new CreatShip(1, i, j));
-
+				std::cout << "falseBC" << std::endl;
 				return false;
 			}
 		}
 	}
-	
+	std::cout << "falseUPW" << std::endl;
+	return false;
 }
 
 
