@@ -33,12 +33,12 @@ void User::init(bool *t) {
 bool User::shot(int x, int y, Sea *sea, Screan *sc) {
 	if (sea->check(x, y) == true) {
 		std::cout << "true" << std::endl;
-		sc->setField(x, y, 9);
+		
 		return true;
 	}
 	else {
 		std::cout << "false" << std::endl;
-		sc->setField(x, y, 1);
+		
 		return false;
 	}
 }
@@ -56,9 +56,9 @@ void User::printShip() {
 
 bool User:: Mshot(int x,int y) {
 	char px = (char)x;
-	char py = (char) y;
+	char py = (char)y;
 	char message[3];
-	message[0] = 'C';
+	message[0] = 'S';
 	message[1] = px;
 	message[2] = py;
 	
@@ -76,7 +76,7 @@ bool User::Check() {
 	int recv_size;
 	char server_reply[120];
 	char *message;
-
+	std:: cout << "check" << std::endl;
 
 	if ((recv_size = recv(fd, server_reply, 120, 0)) == SOCKET_ERROR)
 	{
@@ -85,13 +85,22 @@ bool User::Check() {
 	if (server_reply[0] == 'I') {
 		if (server_reply[1] == '1') {
 			flag = true;
+		
 		}
 		else {
 			flag = false;
 		}
 	}
+
 	else if (server_reply[0] == 'S') {
-		bool t = shot((int)server_reply[1], (int)server_reply[2],sea ,sc);
+		std:: cout << "duap" << std:: endl;
+		int x = (int)server_reply[1];
+		x = x - 1;
+		int y = (int)server_reply[2];
+		y = y - 1;
+		bool t = shot(x,y,sea ,sc);
+		std::cout << x << "  " << y<< std::endl;
+	
 		if (t == true) {
 			message = const_cast<char*>("RT");
 			if (send(fd, message, 2, 0) < 0)
@@ -99,6 +108,7 @@ bool User::Check() {
 				puts("Send failed");
 				return false;
 			}
+			flag = false;
 		}
 		else {
 			message = const_cast<char*>("RF");

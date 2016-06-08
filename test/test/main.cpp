@@ -61,17 +61,16 @@ int main(){
 
 	
 
-	//SOCKET s = initSocket();
+	SOCKET s = initSocket();
+	u_long iMode = 1;
+	ioctlsocket(s, FIONBIO, &iMode);
 	Sea  *sea  = new Sea();
 	Screan sc;
-	User a(sea, &sc);
+	User a(sea, &sc,s);
 
 
-	/*while (true) {
-		a.Check();
-	}*/
 
-
+	
 	
 	int tab[10][10] = 
 					{{0,0,0,1,1,0,0,0,0,0},
@@ -86,8 +85,8 @@ int main(){
 					{0,0,0,0,0,0,0,0,0,0},};
 	
 	a.ShipCreator(tab);
-	a.printShip();
-	sc.read(sea);
-	sc.print();
-	
+
+	while (true) {
+		a.Check();
+	}
 }
