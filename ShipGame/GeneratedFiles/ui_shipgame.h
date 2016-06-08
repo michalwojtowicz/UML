@@ -181,7 +181,7 @@ public:
 	QToolBar *mainToolBar;
 	QStatusBar *statusBar;
 
-	int wartosc = 4;
+	int wartosc = 0;
 	int *ilosc = &wartosc;
 	bool boolwartosc = false;
 	bool *czyPion = &boolwartosc;

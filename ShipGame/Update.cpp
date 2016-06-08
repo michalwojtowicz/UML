@@ -17,12 +17,12 @@ void Update::run()
 
 			result = user->Check();
 			if (result == true) {
-				std::cout << "User: " << user->x;
-				emit changeSignal(user->x,user->y);
+
+				emit noChangeSignal(user->x,user->y);
 			}
 			else if (result== false) {
 
-				emit noChangeSignal(user->x,user->y);
+				emit changeSignal(user->x,user->y);
 			}
 		}
 	}

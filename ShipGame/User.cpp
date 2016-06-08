@@ -32,6 +32,8 @@ void User::init(bool *t) {
 }
 
 bool User::shot(int x, int y, Sea *sea, Screan *sc) {
+	this->x = x;
+	this->y = y;
 	if (sea->check(x, y) == true) {
 		std::cout << "true" << std::endl;
 		return true;
@@ -116,6 +118,7 @@ bool User::Check() {
 				puts("Send failed");
 				return false;
 			}
+			result = true;
 		}
 		else {
 			message = const_cast<char*>("RF");
@@ -126,6 +129,7 @@ bool User::Check() {
 				puts("Send failed");
 				return false;
 			}
+			result = false;
 		}
 	}
 	else if (server_reply[0] == 'R') {
@@ -163,7 +167,7 @@ bool User::Check() {
 	if (result == true) {
 
 		return true;
-	} else {
+	} else if (result == false){
 			
 		return false;
 	}

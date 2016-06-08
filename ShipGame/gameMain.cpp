@@ -318,20 +318,18 @@ void GameMain::noChange(int x, int y) {
 
 	std::cout << x << " " << y;
 	if (user->flag == false) {
-
-		planszaUser[0][0]->setFlat(true);
-		
-		ui.label->setText("pudlo!");
-
+		std::cout << "trafiony1" << std::endl;
+		planszaUser[y][x]->setFlat(true);
+		ui.label->setText("trafiony!");
 		ui.label_5->setGeometry(QRect(110, 130, 751, 271));
 		ui.label_5->setText("Tura przeciwnika");
 	}
 	else {
+		std::cout << "trafiony2" << std::endl;
+		planszaGame[y][x]->setStyleSheet("background-color: brown");
+		planszaGame[y][x]->setUstawiono();
 
-		planszaGame[0][0]->setStyleSheet("background-color: blue");
-		planszaGame[0][0]->setUstawiono();
-
-		ui.label_2->setText("pudlo!");
+		ui.label_2->setText("trafiony!");
 		ui.label_5->resize(QSize(0, 0));
 		ui.label_5->clear();
 	}
@@ -341,20 +339,16 @@ void GameMain::change(int x, int y) {
 	std::cout << "change!";
 	std::cout << x << " " << y;
 	if (user->flag == false) {
-
-		planszaUser[y][x]->setFlat(true);
-
-		ui.label->setText("trafiony!");
-
+		std::cout << "pudlo1" << std::endl;
+		planszaGame[y][x]->setStyleSheet("background-color: brown");
+		planszaGame[y][x]->setUstawiono();
+		ui.label_2->setText("pudlo!");
 		ui.label_5->setGeometry(QRect(110, 130, 751, 271));
 		ui.label_5->setText("Tura przeciwnika");
 	}
 	else {
-
-		planszaGame[y][x]->setStyleSheet("background-color: brown");
-		planszaGame[y][x]->setUstawiono();
-
-		ui.label_2->setText("trafiony!");
+		std::cout << "pudlo2" << std::endl;
+		ui.label->setText("pudlo!");
 		ui.label_5->resize(QSize(0, 0));
 		ui.label_5->clear();
 	}
@@ -407,100 +401,122 @@ void GameMain::on_pushButton_102_clicked()
 
 void GameMain::on_pushButton_103_clicked()
 {
+	user->Mshot(3, 1);
 }
 
 void GameMain::on_pushButton_104_clicked()
 {
+	user->Mshot(4, 1);
 }
 
 void GameMain::on_pushButton_105_clicked()
 {
+	user->Mshot(5, 1);
 }
 
 void GameMain::on_pushButton_106_clicked()
 {
+	user->Mshot(6, 1);
 }
 
 void GameMain::on_pushButton_107_clicked()
 {
+	user->Mshot(7, 1);
 }
 
 void GameMain::on_pushButton_108_clicked()
 {
+	user->Mshot(8, 1);
 }
 
 void GameMain::on_pushButton_109_clicked()
 {
+	user->Mshot(9, 1);
 }
 
 void GameMain::on_pushButton_110_clicked()
 {
+	user->Mshot(10, 1);
 }
 
 void GameMain::on_pushButton_111_clicked()
 {
-	std::cout << "button wcisnety";
 	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_112_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_113_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_114_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_115_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_116_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_117_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_118_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_119_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_120_clicked()
 {
+	user->Mshot(1, 2);
 }
 
 void GameMain::on_pushButton_121_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_122_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_123_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_124_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_125_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_126_clicked()
 {
+	user->Mshot(1, 3);
 }
 
 void GameMain::on_pushButton_127_clicked()

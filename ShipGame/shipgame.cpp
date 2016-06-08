@@ -170,6 +170,9 @@ void ShipGame::refreshCount(int i) {
 
 			ui.label->setText("0x");
 		}
+		else if (count == 0) {
+			*ui.ilosc = 0;
+		}
 	}
 	else if (i == 3) {
 		QString text = ui.label_2->text();
@@ -182,6 +185,9 @@ void ShipGame::refreshCount(int i) {
 		}else if (count == 1) {
 
 			ui.label_2->setText("0x");
+		}
+		else if (count == 0) {
+			*ui.ilosc = 0;
 		}
 	}
 	else if (i == 2) {
@@ -198,6 +204,9 @@ void ShipGame::refreshCount(int i) {
 		}else if (count == 1) {
 
 			ui.label_3->setText("0x");
+		}
+		else if (count == 0) {
+			*ui.ilosc = 0;
 		}
 	}
 	else if (i == 1) {
@@ -220,6 +229,9 @@ void ShipGame::refreshCount(int i) {
 		else if (count == 1) {
 
 			ui.label_4->setText("0x");
+		}
+		else if (count == 0) {
+			*ui.ilosc = 0;
 		}
 	}
 }
@@ -455,6 +467,10 @@ void ShipGame::on_pushButton_10_clicked()
 
 void ShipGame::clickEvent(int x, int y) {
 
+	if (*ui.ilosc == 0) {
+		return;
+	}
+
 	planszaUser[x][y]->setUstawiono();
 	planszaUser[x][y]->ustawionoToList();
 
@@ -480,14 +496,29 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setFlat(false);
 
+			if (y + 4 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 4]->setFlat(false);
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setFlat(false);
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setFlat(false);
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setFlat(false);
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+
 			if (y + 4 <= 9) planszaUser[x][y + 4]->setStyleSheet("background-color: blue");
 			if (y != 0) planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
+
 			if (y != 0 && y < 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
 			if (y + 4 <= 9 && x + 1 <= 9) planszaUser[x + 1][y + 4]->setStyleSheet("background-color: blue");
 			if (y + 3 <= 9 && x + 1 <= 9) planszaUser[x + 1][y + 3]->setStyleSheet("background-color: blue");
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 2]->setStyleSheet("background-color: blue");
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setStyleSheet("background-color: blue");
+	
+			if (y + 4 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 4]->setStyleSheet("background-color: blue");
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setStyleSheet("background-color: blue");
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x -1][y + 1]->setStyleSheet("background-color: blue");
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y-1]->setStyleSheet("background-color: blue");
 
 			if (y+4 <= 9) planszaUser[x][y + 4]->setUstawiono();
 			if (y != 0) planszaUser[x][y - 1]->setUstawiono();
@@ -497,6 +528,13 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x+1][y + 2]->setUstawiono();
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x+1][y + 1]->setUstawiono();
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setUstawiono();
+
+			if (y + 4 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 4]->setUstawiono();
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setUstawiono();
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setUstawiono();
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setUstawiono();
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
 
 		} else if (*ui.ilosc == 3){
 
@@ -647,11 +685,11 @@ void ShipGame::addVertical(int x, int y) {
 }
 
 void ShipGame::on_pushButton_2_clicked() {
-
+	
+	refreshCount(*ui.ilosc);
 	clickEvent(0, 0);
 	counter--;
-	refreshCount(*ui.ilosc);
-	if (counter == 9) {
+	if (counter == 0) {
 
 		GameMain *game = new GameMain(this->plansza);
 		game->show();
@@ -662,9 +700,9 @@ void ShipGame::on_pushButton_2_clicked() {
 
 void ShipGame::on_pushButton_24_clicked()
 {
+	refreshCount(*ui.ilosc);
 	clickEvent(0, 1);
 	counter--;
-	refreshCount(*ui.ilosc);
 	if (counter == 0) {
 
 		ui.label_5->setText("CZEKAJ NA PRZECIWNIKA");
