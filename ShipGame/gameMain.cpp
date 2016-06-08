@@ -321,7 +321,7 @@ void GameMain::noChange(int x, int y) {
 		std::cout << "trafiony1" << std::endl;
 		planszaUser[y][x]->setFlat(true);
 		ui.label->setText("trafiony!");
-		ui.label_5->setGeometry(QRect(110, 130, 751, 271));
+		ui.label_5->setGeometry(QRect(110, 210, 751, 271));
 		ui.label_5->setText("Tura przeciwnika");
 	}
 	else {
@@ -343,7 +343,7 @@ void GameMain::change(int x, int y) {
 		planszaGame[y][x]->setStyleSheet("background-color: brown");
 		planszaGame[y][x]->setUstawiono();
 		ui.label_2->setText("pudlo!");
-		ui.label_5->setGeometry(QRect(110, 130, 751, 271));
+		ui.label_5->setGeometry(QRect(110, 210, 751, 271));
 		ui.label_5->setText("Tura przeciwnika");
 	}
 	else {
@@ -375,8 +375,7 @@ void GameMain::drawShip() {
 
 			if (this->tab[i][j] == 1) {
 				
-				planszaUser[i][j]->setFlat(false);
-				planszaUser[i][j]->setStyleSheet("background-color: blue");
+				planszaUser[i][j]->setStyleSheet("background-color: brown");
 			}
 		}
 	}
@@ -446,47 +445,47 @@ void GameMain::on_pushButton_111_clicked()
 
 void GameMain::on_pushButton_112_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(2, 2);
 }
 
 void GameMain::on_pushButton_113_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(3, 2);
 }
 
 void GameMain::on_pushButton_114_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(4, 2);
 }
 
 void GameMain::on_pushButton_115_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(5, 2);
 }
 
 void GameMain::on_pushButton_116_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(6, 2);
 }
 
 void GameMain::on_pushButton_117_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(7, 2);
 }
 
 void GameMain::on_pushButton_118_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(8, 2);
 }
 
 void GameMain::on_pushButton_119_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(9, 2);
 }
 
 void GameMain::on_pushButton_120_clicked()
 {
-	user->Mshot(1, 2);
+	user->Mshot(10, 2);
 }
 
 void GameMain::on_pushButton_121_clicked()
@@ -496,321 +495,395 @@ void GameMain::on_pushButton_121_clicked()
 
 void GameMain::on_pushButton_122_clicked()
 {
-	user->Mshot(1, 3);
+	user->Mshot(2, 3);
 }
 
 void GameMain::on_pushButton_123_clicked()
 {
-	user->Mshot(1, 3);
+	user->Mshot(3, 3);
 }
 
 void GameMain::on_pushButton_124_clicked()
 {
-	user->Mshot(1, 3);
+	user->Mshot(4, 3);
 }
 
 void GameMain::on_pushButton_125_clicked()
 {
-	user->Mshot(1, 3);
+	user->Mshot(5, 3);
 }
 
 void GameMain::on_pushButton_126_clicked()
 {
-	user->Mshot(1, 3);
+	user->Mshot(6, 3);
 }
 
 void GameMain::on_pushButton_127_clicked()
 {
+	user->Mshot(7, 3);
 }
 
 void GameMain::on_pushButton_128_clicked()
 {
+	user->Mshot(8, 3);
 }
 
 void GameMain::on_pushButton_129_clicked()
 {
+	user->Mshot(9, 3);
 }
 
 void GameMain::on_pushButton_130_clicked()
 {
+	user->Mshot(10, 3);
 }
 
 void GameMain::on_pushButton_131_clicked()
 {
+	user->Mshot(1, 4);
 }
 
 void GameMain::on_pushButton_132_clicked()
 {
+	user->Mshot(2, 4);
 }
 
 void GameMain::on_pushButton_133_clicked()
 {
+	user->Mshot(3, 4);
 }
 
 void GameMain::on_pushButton_134_clicked()
 {
+	user->Mshot(4, 4);
 }
 
 void GameMain::on_pushButton_135_clicked()
 {
+	user->Mshot(5, 4);
 }
 
 void GameMain::on_pushButton_136_clicked()
 {
+	user->Mshot(6, 4);
 }
 
 void GameMain::on_pushButton_137_clicked()
 {
+	user->Mshot(7, 4);
 }
 
 void GameMain::on_pushButton_138_clicked()
 {
+	user->Mshot(8, 4);
 }
 
 void GameMain::on_pushButton_139_clicked()
 {
+	user->Mshot(9, 4);
 }
 
 void GameMain::on_pushButton_140_clicked()
 {
+	user->Mshot(10, 4);
 }
 
 void GameMain::on_pushButton_141_clicked()
 {
+	user->Mshot(1, 5);
 }
 
 void GameMain::on_pushButton_142_clicked()
 {
+	user->Mshot(2, 5);
 }
 
 void GameMain::on_pushButton_143_clicked()
 {
+	user->Mshot(3, 5);
 }
 
 void GameMain::on_pushButton_144_clicked()
 {
+	user->Mshot(4, 5);
 }
 
 void GameMain::on_pushButton_145_clicked()
 {
+	user->Mshot(5, 5);
 }
 
 void GameMain::on_pushButton_146_clicked()
 {
+	user->Mshot(6, 5);
 }
 
 void GameMain::on_pushButton_147_clicked()
 {
+	user->Mshot(7, 5);
 }
 
 void GameMain::on_pushButton_148_clicked()
 {
+	user->Mshot(8, 5);
 }
 
 void GameMain::on_pushButton_149_clicked()
 {
+	user->Mshot(9, 5);
 }
 
 void GameMain::on_pushButton_150_clicked()
 {
+	user->Mshot(10, 5);
 }
 
 void GameMain::on_pushButton_151_clicked()
 {
+	user->Mshot(1, 6);
 }
 
 void GameMain::on_pushButton_152_clicked()
 {
+	user->Mshot(2, 6);
 }
 
 void GameMain::on_pushButton_153_clicked()
 {
+	user->Mshot(3, 6);
 }
 
 void GameMain::on_pushButton_154_clicked()
 {
+	user->Mshot(4, 6);
 }
 
 void GameMain::on_pushButton_155_clicked()
 {
+	user->Mshot(5, 6);
 }
 
 void GameMain::on_pushButton_156_clicked()
 {
+	user->Mshot(6, 6);
 }
 
 void GameMain::on_pushButton_157_clicked()
 {
+	user->Mshot(7, 6);
 }
 
 void GameMain::on_pushButton_158_clicked()
 {
+	user->Mshot(8, 6);
 }
 
 void GameMain::on_pushButton_159_clicked()
 {
+	user->Mshot(9, 6);
 }
 
 void GameMain::on_pushButton_160_clicked()
 {
+	user->Mshot(10, 6);
 }
 
 void GameMain::on_pushButton_161_clicked()
 {
+	user->Mshot(1, 7);
 }
 
 void GameMain::on_pushButton_162_clicked()
 {
+	user->Mshot(2, 7);
 }
 
 void GameMain::on_pushButton_163_clicked()
 {
+	user->Mshot(3, 7);
 }
 
 void GameMain::on_pushButton_164_clicked()
 {
+	user->Mshot(4, 7);
 }
 
 void GameMain::on_pushButton_165_clicked()
 {
+	user->Mshot(5, 7);
 }
 
 void GameMain::on_pushButton_166_clicked()
 {
+	user->Mshot(6, 7);
 }
 
 void GameMain::on_pushButton_167_clicked()
 {
+	user->Mshot(7, 7);
 }
 
 void GameMain::on_pushButton_168_clicked()
 {
+	user->Mshot(8, 7);
 }
 
 void GameMain::on_pushButton_169_clicked()
 {
+	user->Mshot(9, 7);
 }
 
 void GameMain::on_pushButton_170_clicked()
 {
+	user->Mshot(10, 7);
 }
 
 void GameMain::on_pushButton_171_clicked()
 {
+	user->Mshot(1, 8);
 }
 
 void GameMain::on_pushButton_172_clicked()
 {
+	user->Mshot(2, 8);
 }
 
 void GameMain::on_pushButton_173_clicked()
 {
+	user->Mshot(3, 8);
 }
 
 void GameMain::on_pushButton_174_clicked()
 {
+	user->Mshot(4, 8);
 }
 
 void GameMain::on_pushButton_175_clicked()
 {
+	user->Mshot(5, 8);
 }
 
 void GameMain::on_pushButton_176_clicked()
 {
+	user->Mshot(6, 8);
 }
 
 void GameMain::on_pushButton_177_clicked()
 {
+	user->Mshot(7, 8);
 }
 
 void GameMain::on_pushButton_178_clicked()
 {
+	user->Mshot(8, 8);
 }
 
 void GameMain::on_pushButton_179_clicked()
 {
+	user->Mshot(9, 8);
 }
 
 void GameMain::on_pushButton_180_clicked()
 {
+	user->Mshot(10, 8);
 }
 
 void GameMain::on_pushButton_181_clicked()
 {
+	user->Mshot(1, 9);
 }
 
 void GameMain::on_pushButton_182_clicked()
 {
+	user->Mshot(2, 9);
 }
 
 void GameMain::on_pushButton_183_clicked()
 {
+	user->Mshot(3, 9);
 }
 
 void GameMain::on_pushButton_184_clicked()
 {
+	user->Mshot(4, 9);
 }
 
 void GameMain::on_pushButton_185_clicked()
 {
+	user->Mshot(5, 9);
 }
 
 void GameMain::on_pushButton_186_clicked()
 {
+	user->Mshot(6, 9);
 }
 
 void GameMain::on_pushButton_187_clicked()
 {
+	user->Mshot(7, 9);
 }
 
 void GameMain::on_pushButton_188_clicked()
 {
+	user->Mshot(8, 9);
 }
 
 void GameMain::on_pushButton_189_clicked()
 {
+	user->Mshot(9, 9);
 }
 
 void GameMain::on_pushButton_190_clicked()
 {
+	user->Mshot(10, 9);
 }
 
 void GameMain::on_pushButton_191_clicked()
 {
+	user->Mshot(1, 10);
 }
 
 void GameMain::on_pushButton_192_clicked()
 {
+	user->Mshot(2, 10);
 }
 
 void GameMain::on_pushButton_193_clicked()
 {
+	user->Mshot(3, 10);
 }
 
 void GameMain::on_pushButton_194_clicked()
 {
+	user->Mshot(4, 10);
 }
 
 void GameMain::on_pushButton_195_clicked()
 {
+	user->Mshot(5, 10);
 }
 
 void GameMain::on_pushButton_196_clicked()
 {
+	user->Mshot(6, 10);
 }
 
 void GameMain::on_pushButton_197_clicked()
 {
+	user->Mshot(7, 10);
 }
 
 void GameMain::on_pushButton_198_clicked()
 {
+	user->Mshot(8, 10);
 }
 
 void GameMain::on_pushButton_199_clicked()
 {
+	user->Mshot(9, 10);
 }
 
 void GameMain::on_pushButton_200_clicked()
 {
+	user->Mshot(10, 10);
 }

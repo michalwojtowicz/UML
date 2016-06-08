@@ -158,6 +158,7 @@ public:
 	QHoverSensitiveButton *pushButton_100;
 	QHoverSensitiveButton *pushButton_101;
 	QHoverSensitiveButton *pushButton_99;
+	QPushButton *pushButton_12;
 	QVBoxLayout *verticalLayout;
 	QHBoxLayout *horizontalLayout_3;
 	QLabel *label;
@@ -213,6 +214,11 @@ public:
 		gridLayout_5 = new QGridLayout();
 		gridLayout_5->setSpacing(6);
 		gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+
+		pushButton_12 = new QPushButton(centralWidget);
+		pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
+
+		gridLayout_2->addWidget(pushButton_12, 1, 0, 1, 1);
 
 		pushButton_122 = new QHoverSensitiveButton(ilosc, czyPion, centralWidget);
 		pushButton_122->setObjectName(QStringLiteral("pushButton_122"));
@@ -1174,6 +1180,7 @@ public:
 		label_66->setText(QApplication::translate("ShipGameClass", "5", 0));
 		pushButton_31->setText(QString());
 		label_59->setText(QApplication::translate("ShipGameClass", "C", 0));
+		pushButton_12->setText(QString("ZMIANA KIERUNKU"));
 		pushButton_27->setText(QString());
 		pushButton_25->setText(QString());
 		pushButton_28->setText(QString());

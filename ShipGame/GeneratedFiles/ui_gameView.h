@@ -298,13 +298,13 @@ public:
 		gridLayout_5->setContentsMargins(0, 0, 0, 0);
 		pushButton_31 = new QPushButton(gridLayoutWidget_4);
 		pushButton_31->setObjectName(QStringLiteral("pushButton_31"));
-		pushButton_31->setFlat(true);
+		pushButton_31->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_31, 4, 1, 1, 1);
 
 		pushButton_29 = new QPushButton(gridLayoutWidget_4);
 		pushButton_29->setObjectName(QStringLiteral("pushButton_29"));
-		pushButton_29->setFlat(true);
+		pushButton_29->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_29, 3, 9, 1, 1);
 
@@ -423,37 +423,37 @@ public:
 
 		pushButton_22 = new QPushButton(gridLayoutWidget_4);
 		pushButton_22->setObjectName(QStringLiteral("pushButton_22"));
-		pushButton_22->setFlat(true);
+		pushButton_22->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_22, 3, 2, 1, 1);
 
 		pushButton_30 = new QPushButton(gridLayoutWidget_4);
 		pushButton_30->setObjectName(QStringLiteral("pushButton_30"));
-		pushButton_30->setFlat(true);
+		pushButton_30->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_30, 3, 10, 1, 1);
 
 		pushButton_23 = new QPushButton(gridLayoutWidget_4);
 		pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
-		pushButton_23->setFlat(true);
+		pushButton_23->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_23, 3, 3, 1, 1);
 
 		pushButton_28 = new QPushButton(gridLayoutWidget_4);
 		pushButton_28->setObjectName(QStringLiteral("pushButton_28"));
-		pushButton_28->setFlat(true);
+		pushButton_28->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_28, 3, 8, 1, 1);
 
 		pushButton_21 = new QPushButton(gridLayoutWidget_4);
 		pushButton_21->setObjectName(QStringLiteral("pushButton_21"));
-		pushButton_21->setFlat(true);
+		pushButton_21->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_21, 3, 1, 1, 1);
 
 		pushButton_26 = new QPushButton(gridLayoutWidget_4);
 		pushButton_26->setObjectName(QStringLiteral("pushButton_26"));
-		pushButton_26->setFlat(true);
+		pushButton_26->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_26, 3, 6, 1, 1);
 
@@ -465,493 +465,493 @@ public:
 
 		pushButton_27 = new QPushButton(gridLayoutWidget_4);
 		pushButton_27->setObjectName(QStringLiteral("pushButton_27"));
-		pushButton_27->setFlat(true);
+		pushButton_27->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_27, 3, 7, 1, 1);
 
 		pushButton_24 = new QPushButton(gridLayoutWidget_4);
 		pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
-		pushButton_24->setFlat(true);
+		pushButton_24->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_24, 3, 4, 1, 1);
 
 		pushButton_25 = new QPushButton(gridLayoutWidget_4);
 		pushButton_25->setObjectName(QStringLiteral("pushButton_25"));
-		pushButton_25->setFlat(true);
+		pushButton_25->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_25, 3, 5, 1, 1);
 
 		pushButton_19 = new QPushButton(gridLayoutWidget_4);
 		pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
-		pushButton_19->setFlat(true);
+		pushButton_19->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_19, 2, 9, 1, 1);
 
 		pushButton_20 = new QPushButton(gridLayoutWidget_4);
 		pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
-		pushButton_20->setFlat(true);
+		pushButton_20->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_20, 2, 10, 1, 1);
 
 		pushButton_15 = new QPushButton(gridLayoutWidget_4);
 		pushButton_15->setObjectName(QStringLiteral("pushButton_15"));
-		pushButton_15->setFlat(true);
+		pushButton_15->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_15, 2, 5, 1, 1);
 
 		pushButton_16 = new QPushButton(gridLayoutWidget_4);
 		pushButton_16->setObjectName(QStringLiteral("pushButton_16"));
-		pushButton_16->setFlat(true);
+		pushButton_16->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_16, 2, 6, 1, 1);
 
 		pushButton_17 = new QPushButton(gridLayoutWidget_4);
 		pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
-		pushButton_17->setFlat(true);
+		pushButton_17->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_17, 2, 7, 1, 1);
 
 		pushButton_18 = new QPushButton(gridLayoutWidget_4);
 		pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
-		pushButton_18->setFlat(true);
+		pushButton_18->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_18, 2, 8, 1, 1);
 
 		pushButton_7 = new QPushButton(gridLayoutWidget_4);
 		pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
-		pushButton_7->setFlat(true);
+		pushButton_7->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_7, 1, 7, 1, 1);
 
 		pushButton_2 = new QPushButton(gridLayoutWidget_4);
 		pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-		pushButton_2->setFlat(true);
+		pushButton_2->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_2, 1, 2, 1, 1);
 
 		pushButton_3 = new QPushButton(gridLayoutWidget_4);
 		pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-		pushButton_3->setFlat(true);
+		pushButton_3->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_3, 1, 3, 1, 1);
 
 		pushButton = new QPushButton(gridLayoutWidget_4);
 		pushButton->setObjectName(QStringLiteral("pushButton"));
-		pushButton->setFlat(true);
+		pushButton->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton, 1, 1, 1, 1);
 
 		pushButton_4 = new QPushButton(gridLayoutWidget_4);
 		pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-		pushButton_4->setFlat(true);
+		pushButton_4->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_4, 1, 4, 1, 1);
 
 		pushButton_5 = new QPushButton(gridLayoutWidget_4);
 		pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-		pushButton_5->setFlat(true);
+		pushButton_5->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_5, 1, 5, 1, 1);
 
 		pushButton_6 = new QPushButton(gridLayoutWidget_4);
 		pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-		pushButton_6->setFlat(true);
+		pushButton_6->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_6, 1, 6, 1, 1);
 
 		pushButton_14 = new QPushButton(gridLayoutWidget_4);
 		pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
-		pushButton_14->setFlat(true);
+		pushButton_14->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_14, 2, 4, 1, 1);
 
 		pushButton_8 = new QPushButton(gridLayoutWidget_4);
 		pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
-		pushButton_8->setFlat(true);
+		pushButton_8->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_8, 1, 8, 1, 1);
 
 		pushButton_9 = new QPushButton(gridLayoutWidget_4);
 		pushButton_9->setObjectName(QStringLiteral("pushButton_9"));
-		pushButton_9->setFlat(true);
+		pushButton_9->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_9, 1, 9, 1, 1);
 
 		pushButton_10 = new QPushButton(gridLayoutWidget_4);
 		pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
-		pushButton_10->setFlat(true);
+		pushButton_10->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_10, 1, 10, 1, 1);
 
 		pushButton_13 = new QPushButton(gridLayoutWidget_4);
 		pushButton_13->setObjectName(QStringLiteral("pushButton_13"));
-		pushButton_13->setFlat(true);
+		pushButton_13->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_13, 2, 3, 1, 1);
 
 		pushButton_12 = new QPushButton(gridLayoutWidget_4);
 		pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
-		pushButton_12->setFlat(true);
+		pushButton_12->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_12, 2, 2, 1, 1);
 
 		pushButton_11 = new QPushButton(gridLayoutWidget_4);
 		pushButton_11->setObjectName(QStringLiteral("pushButton_11"));
-		pushButton_11->setFlat(true);
+		pushButton_11->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_11, 2, 1, 1, 1);
 
 		pushButton_69 = new QPushButton(gridLayoutWidget_4);
 		pushButton_69->setObjectName(QStringLiteral("pushButton_69"));
-		pushButton_69->setFlat(true);
+		pushButton_69->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_69, 7, 9, 1, 1);
 
 		pushButton_71 = new QPushButton(gridLayoutWidget_4);
 		pushButton_71->setObjectName(QStringLiteral("pushButton_71"));
-		pushButton_71->setFlat(true);
+		pushButton_71->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_71, 8, 1, 1, 1);
 
 		pushButton_72 = new QPushButton(gridLayoutWidget_4);
 		pushButton_72->setObjectName(QStringLiteral("pushButton_72"));
-		pushButton_72->setFlat(true);
+		pushButton_72->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_72, 8, 2, 1, 1);
 
 		pushButton_70 = new QPushButton(gridLayoutWidget_4);
 		pushButton_70->setObjectName(QStringLiteral("pushButton_70"));
-		pushButton_70->setFlat(true);
+		pushButton_70->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_70, 7, 10, 1, 1);
 
 		pushButton_73 = new QPushButton(gridLayoutWidget_4);
 		pushButton_73->setObjectName(QStringLiteral("pushButton_73"));
-		pushButton_73->setFlat(true);
+		pushButton_73->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_73, 8, 3, 1, 1);
 
 		pushButton_75 = new QPushButton(gridLayoutWidget_4);
 		pushButton_75->setObjectName(QStringLiteral("pushButton_75"));
-		pushButton_75->setFlat(true);
+		pushButton_75->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_75, 8, 5, 1, 1);
 
 		pushButton_74 = new QPushButton(gridLayoutWidget_4);
 		pushButton_74->setObjectName(QStringLiteral("pushButton_74"));
-		pushButton_74->setFlat(true);
+		pushButton_74->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_74, 8, 4, 1, 1);
 
 		pushButton_78 = new QPushButton(gridLayoutWidget_4);
 		pushButton_78->setObjectName(QStringLiteral("pushButton_78"));
-		pushButton_78->setFlat(true);
+		pushButton_78->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_78, 8, 8, 1, 1);
 
 		pushButton_76 = new QPushButton(gridLayoutWidget_4);
 		pushButton_76->setObjectName(QStringLiteral("pushButton_76"));
-		pushButton_76->setFlat(true);
+		pushButton_76->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_76, 8, 6, 1, 1);
 
 		pushButton_77 = new QPushButton(gridLayoutWidget_4);
 		pushButton_77->setObjectName(QStringLiteral("pushButton_77"));
-		pushButton_77->setFlat(true);
+		pushButton_77->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_77, 8, 7, 1, 1);
 
 		pushButton_81 = new QPushButton(gridLayoutWidget_4);
 		pushButton_81->setObjectName(QStringLiteral("pushButton_81"));
-		pushButton_81->setFlat(true);
+		pushButton_81->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_81, 9, 1, 1, 1);
 
 		pushButton_80 = new QPushButton(gridLayoutWidget_4);
 		pushButton_80->setObjectName(QStringLiteral("pushButton_80"));
-		pushButton_80->setFlat(true);
+		pushButton_80->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_80, 8, 10, 1, 1);
 
 		pushButton_79 = new QPushButton(gridLayoutWidget_4);
 		pushButton_79->setObjectName(QStringLiteral("pushButton_79"));
-		pushButton_79->setFlat(true);
+		pushButton_79->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_79, 8, 9, 1, 1);
 
 		pushButton_84 = new QPushButton(gridLayoutWidget_4);
 		pushButton_84->setObjectName(QStringLiteral("pushButton_84"));
-		pushButton_84->setFlat(true);
+		pushButton_84->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_84, 9, 4, 1, 1);
 
 		pushButton_82 = new QPushButton(gridLayoutWidget_4);
 		pushButton_82->setObjectName(QStringLiteral("pushButton_82"));
-		pushButton_82->setFlat(true);
+		pushButton_82->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_82, 9, 2, 1, 1);
 
 		pushButton_83 = new QPushButton(gridLayoutWidget_4);
 		pushButton_83->setObjectName(QStringLiteral("pushButton_83"));
-		pushButton_83->setFlat(true);
+		pushButton_83->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_83, 9, 3, 1, 1);
 
 		pushButton_87 = new QPushButton(gridLayoutWidget_4);
 		pushButton_87->setObjectName(QStringLiteral("pushButton_87"));
-		pushButton_87->setFlat(true);
+		pushButton_87->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_87, 9, 7, 1, 1);
 
 		pushButton_88 = new QPushButton(gridLayoutWidget_4);
 		pushButton_88->setObjectName(QStringLiteral("pushButton_88"));
-		pushButton_88->setFlat(true);
+		pushButton_88->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_88, 9, 8, 1, 1);
 
 		pushButton_85 = new QPushButton(gridLayoutWidget_4);
 		pushButton_85->setObjectName(QStringLiteral("pushButton_85"));
-		pushButton_85->setFlat(true);
+		pushButton_85->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_85, 9, 5, 1, 1);
 
 		pushButton_86 = new QPushButton(gridLayoutWidget_4);
 		pushButton_86->setObjectName(QStringLiteral("pushButton_86"));
-		pushButton_86->setFlat(true);
+		pushButton_86->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_86, 9, 6, 1, 1);
 
 		pushButton_90 = new QPushButton(gridLayoutWidget_4);
 		pushButton_90->setObjectName(QStringLiteral("pushButton_90"));
-		pushButton_90->setFlat(true);
+		pushButton_90->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_90, 9, 10, 1, 1);
 
 		pushButton_89 = new QPushButton(gridLayoutWidget_4);
 		pushButton_89->setObjectName(QStringLiteral("pushButton_89"));
-		pushButton_89->setFlat(true);
+		pushButton_89->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_89, 9, 9, 1, 1);
 
 		pushButton_33 = new QPushButton(gridLayoutWidget_4);
 		pushButton_33->setObjectName(QStringLiteral("pushButton_33"));
-		pushButton_33->setFlat(true);
+		pushButton_33->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_33, 4, 3, 1, 1);
 
 		pushButton_32 = new QPushButton(gridLayoutWidget_4);
 		pushButton_32->setObjectName(QStringLiteral("pushButton_32"));
-		pushButton_32->setFlat(true);
+		pushButton_32->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_32, 4, 2, 1, 1);
 
 		pushButton_35 = new QPushButton(gridLayoutWidget_4);
 		pushButton_35->setObjectName(QStringLiteral("pushButton_35"));
-		pushButton_35->setFlat(true);
+		pushButton_35->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_35, 4, 5, 1, 1);
 
 		pushButton_36 = new QPushButton(gridLayoutWidget_4);
 		pushButton_36->setObjectName(QStringLiteral("pushButton_36"));
-		pushButton_36->setFlat(true);
+		pushButton_36->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_36, 4, 6, 1, 1);
 
 		pushButton_34 = new QPushButton(gridLayoutWidget_4);
 		pushButton_34->setObjectName(QStringLiteral("pushButton_34"));
-		pushButton_34->setFlat(true);
+		pushButton_34->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_34, 4, 4, 1, 1);
 
 		pushButton_37 = new QPushButton(gridLayoutWidget_4);
 		pushButton_37->setObjectName(QStringLiteral("pushButton_37"));
-		pushButton_37->setFlat(true);
+		pushButton_37->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_37, 4, 7, 1, 1);
 
 		pushButton_39 = new QPushButton(gridLayoutWidget_4);
 		pushButton_39->setObjectName(QStringLiteral("pushButton_39"));
-		pushButton_39->setFlat(true);
+		pushButton_39->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_39, 4, 9, 1, 1);
 
 		pushButton_38 = new QPushButton(gridLayoutWidget_4);
 		pushButton_38->setObjectName(QStringLiteral("pushButton_38"));
-		pushButton_38->setFlat(true);
+		pushButton_38->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_38, 4, 8, 1, 1);
 
 		pushButton_40 = new QPushButton(gridLayoutWidget_4);
 		pushButton_40->setObjectName(QStringLiteral("pushButton_40"));
-		pushButton_40->setFlat(true);
+		pushButton_40->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_40, 4, 10, 1, 1);
 
 		pushButton_43 = new QPushButton(gridLayoutWidget_4);
 		pushButton_43->setObjectName(QStringLiteral("pushButton_43"));
-		pushButton_43->setFlat(true);
+		pushButton_43->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_43, 5, 3, 1, 1);
 
 		pushButton_41 = new QPushButton(gridLayoutWidget_4);
 		pushButton_41->setObjectName(QStringLiteral("pushButton_41"));
-		pushButton_41->setFlat(true);
+		pushButton_41->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_41, 5, 1, 1, 1);
 
 		pushButton_42 = new QPushButton(gridLayoutWidget_4);
 		pushButton_42->setObjectName(QStringLiteral("pushButton_42"));
-		pushButton_42->setFlat(true);
+		pushButton_42->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_42, 5, 2, 1, 1);
 
 		pushButton_44 = new QPushButton(gridLayoutWidget_4);
 		pushButton_44->setObjectName(QStringLiteral("pushButton_44"));
-		pushButton_44->setFlat(true);
+		pushButton_44->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_44, 5, 4, 1, 1);
 
 		pushButton_45 = new QPushButton(gridLayoutWidget_4);
 		pushButton_45->setObjectName(QStringLiteral("pushButton_45"));
-		pushButton_45->setFlat(true);
+		pushButton_45->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_45, 5, 5, 1, 1);
 
 		pushButton_46 = new QPushButton(gridLayoutWidget_4);
 		pushButton_46->setObjectName(QStringLiteral("pushButton_46"));
-		pushButton_46->setFlat(true);
+		pushButton_46->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_46, 5, 6, 1, 1);
 
 		pushButton_48 = new QPushButton(gridLayoutWidget_4);
 		pushButton_48->setObjectName(QStringLiteral("pushButton_48"));
-		pushButton_48->setFlat(true);
+		pushButton_48->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_48, 5, 8, 1, 1);
 
 		pushButton_47 = new QPushButton(gridLayoutWidget_4);
 		pushButton_47->setObjectName(QStringLiteral("pushButton_47"));
-		pushButton_47->setFlat(true);
+		pushButton_47->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_47, 5, 7, 1, 1);
 
 		pushButton_49 = new QPushButton(gridLayoutWidget_4);
 		pushButton_49->setObjectName(QStringLiteral("pushButton_49"));
-		pushButton_49->setFlat(true);
+		pushButton_49->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_49, 5, 9, 1, 1);
 
 		pushButton_51 = new QPushButton(gridLayoutWidget_4);
 		pushButton_51->setObjectName(QStringLiteral("pushButton_51"));
-		pushButton_51->setFlat(true);
+		pushButton_51->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_51, 6, 1, 1, 1);
 
 		pushButton_52 = new QPushButton(gridLayoutWidget_4);
 		pushButton_52->setObjectName(QStringLiteral("pushButton_52"));
-		pushButton_52->setFlat(true);
+		pushButton_52->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_52, 6, 2, 1, 1);
 
 		pushButton_50 = new QPushButton(gridLayoutWidget_4);
 		pushButton_50->setObjectName(QStringLiteral("pushButton_50"));
-		pushButton_50->setFlat(true);
+		pushButton_50->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_50, 5, 10, 1, 1);
 
 		pushButton_56 = new QPushButton(gridLayoutWidget_4);
 		pushButton_56->setObjectName(QStringLiteral("pushButton_56"));
-		pushButton_56->setFlat(true);
+		pushButton_56->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_56, 6, 6, 1, 1);
 
 		pushButton_54 = new QPushButton(gridLayoutWidget_4);
 		pushButton_54->setObjectName(QStringLiteral("pushButton_54"));
-		pushButton_54->setFlat(true);
+		pushButton_54->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_54, 6, 4, 1, 1);
 
 		pushButton_53 = new QPushButton(gridLayoutWidget_4);
 		pushButton_53->setObjectName(QStringLiteral("pushButton_53"));
-		pushButton_53->setFlat(true);
+		pushButton_53->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_53, 6, 3, 1, 1);
 
 		pushButton_55 = new QPushButton(gridLayoutWidget_4);
 		pushButton_55->setObjectName(QStringLiteral("pushButton_55"));
-		pushButton_55->setFlat(true);
+		pushButton_55->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_55, 6, 5, 1, 1);
 
 		pushButton_59 = new QPushButton(gridLayoutWidget_4);
 		pushButton_59->setObjectName(QStringLiteral("pushButton_59"));
-		pushButton_59->setFlat(true);
+		pushButton_59->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_59, 6, 9, 1, 1);
 
 		pushButton_58 = new QPushButton(gridLayoutWidget_4);
 		pushButton_58->setObjectName(QStringLiteral("pushButton_58"));
-		pushButton_58->setFlat(true);
+		pushButton_58->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_58, 6, 8, 1, 1);
 
 		pushButton_57 = new QPushButton(gridLayoutWidget_4);
 		pushButton_57->setObjectName(QStringLiteral("pushButton_57"));
-		pushButton_57->setFlat(true);
+		pushButton_57->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_57, 6, 7, 1, 1);
 
 		pushButton_60 = new QPushButton(gridLayoutWidget_4);
 		pushButton_60->setObjectName(QStringLiteral("pushButton_60"));
-		pushButton_60->setFlat(true);
+		pushButton_60->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_60, 6, 10, 1, 1);
 
 		pushButton_62 = new QPushButton(gridLayoutWidget_4);
 		pushButton_62->setObjectName(QStringLiteral("pushButton_62"));
-		pushButton_62->setFlat(true);
+		pushButton_62->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_62, 7, 2, 1, 1);
 
 		pushButton_61 = new QPushButton(gridLayoutWidget_4);
 		pushButton_61->setObjectName(QStringLiteral("pushButton_61"));
-		pushButton_61->setFlat(true);
+		pushButton_61->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_61, 7, 1, 1, 1);
 
 		pushButton_64 = new QPushButton(gridLayoutWidget_4);
 		pushButton_64->setObjectName(QStringLiteral("pushButton_64"));
-		pushButton_64->setFlat(true);
+		pushButton_64->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_64, 7, 4, 1, 1);
 
 		pushButton_65 = new QPushButton(gridLayoutWidget_4);
 		pushButton_65->setObjectName(QStringLiteral("pushButton_65"));
-		pushButton_65->setFlat(true);
+		pushButton_65->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_65, 7, 5, 1, 1);
 
 		pushButton_63 = new QPushButton(gridLayoutWidget_4);
 		pushButton_63->setObjectName(QStringLiteral("pushButton_63"));
-		pushButton_63->setFlat(true);
+		pushButton_63->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_63, 7, 3, 1, 1);
 
 		pushButton_66 = new QPushButton(gridLayoutWidget_4);
 		pushButton_66->setObjectName(QStringLiteral("pushButton_66"));
-		pushButton_66->setFlat(true);
+		pushButton_66->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_66, 7, 6, 1, 1);
 
 		pushButton_67 = new QPushButton(gridLayoutWidget_4);
 		pushButton_67->setObjectName(QStringLiteral("pushButton_67"));
-		pushButton_67->setFlat(true);
+		pushButton_67->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_67, 7, 7, 1, 1);
 
 		pushButton_68 = new QPushButton(gridLayoutWidget_4);
 		pushButton_68->setObjectName(QStringLiteral("pushButton_68"));
-		pushButton_68->setFlat(true);
+		pushButton_68->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_68, 7, 8, 1, 1);
 
@@ -963,61 +963,61 @@ public:
 
 		pushButton_91 = new QPushButton(gridLayoutWidget_4);
 		pushButton_91->setObjectName(QStringLiteral("pushButton_91"));
-		pushButton_91->setFlat(true);
+		pushButton_91->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_91, 10, 1, 1, 1);
 
 		pushButton_92 = new QPushButton(gridLayoutWidget_4);
 		pushButton_92->setObjectName(QStringLiteral("pushButton_92"));
-		pushButton_92->setFlat(true);
+		pushButton_92->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_92, 10, 2, 1, 1);
 
 		pushButton_93 = new QPushButton(gridLayoutWidget_4);
 		pushButton_93->setObjectName(QStringLiteral("pushButton_93"));
-		pushButton_93->setFlat(true);
+		pushButton_93->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_93, 10, 3, 1, 1);
 
 		pushButton_94 = new QPushButton(gridLayoutWidget_4);
 		pushButton_94->setObjectName(QStringLiteral("pushButton_94"));
-		pushButton_94->setFlat(true);
+		pushButton_94->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_94, 10, 4, 1, 1);
 
 		pushButton_95 = new QPushButton(gridLayoutWidget_4);
 		pushButton_95->setObjectName(QStringLiteral("pushButton_95"));
-		pushButton_95->setFlat(true);
+		pushButton_95->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_95, 10, 5, 1, 1);
 
 		pushButton_96 = new QPushButton(gridLayoutWidget_4);
 		pushButton_96->setObjectName(QStringLiteral("pushButton_96"));
-		pushButton_96->setFlat(true);
+		pushButton_96->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_96, 10, 6, 1, 1);
 
 		pushButton_97 = new QPushButton(gridLayoutWidget_4);
 		pushButton_97->setObjectName(QStringLiteral("pushButton_97"));
-		pushButton_97->setFlat(true);
+		pushButton_97->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_97, 10, 7, 1, 1);
 
 		pushButton_98 = new QPushButton(gridLayoutWidget_4);
 		pushButton_98->setObjectName(QStringLiteral("pushButton_98"));
-		pushButton_98->setFlat(true);
+		pushButton_98->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_98, 10, 8, 1, 1);
 
 		pushButton_99 = new QPushButton(gridLayoutWidget_4);
 		pushButton_99->setObjectName(QStringLiteral("pushButton_99"));
-		pushButton_99->setFlat(true);
+		pushButton_99->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_99, 10, 9, 1, 1);
 
 		pushButton_100 = new QPushButton(gridLayoutWidget_4);
 		pushButton_100->setObjectName(QStringLiteral("pushButton_100"));
-		pushButton_100->setFlat(true);
+		pushButton_100->setStyleSheet("background-color: blue");
 
 		gridLayout_5->addWidget(pushButton_100, 10, 10, 1, 1);
 
@@ -1952,7 +1952,7 @@ public:
 		label_2->setFont(font);
 		label_5 = new QLabel(widget);
 		label_5->setObjectName(QStringLiteral("label_5"));
-		label_5->setGeometry(QRect(110, 130, 751, 271));
+		label_5->setGeometry(QRect(110, 210, 751, 271));
 		QFont font1;
 		font1.setPointSize(48);
 		label_5->setFont(font1);

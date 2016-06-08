@@ -33,6 +33,8 @@ public slots:
 
 	void on_pushButton_2_clicked();
 
+	void on_pushButton_12_clicked();
+
 	void on_pushButton_24_clicked();
 	void on_pushButton_25_clicked();
 	void on_pushButton_26_clicked();

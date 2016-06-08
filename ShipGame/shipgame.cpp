@@ -144,6 +144,18 @@ void ShipGame::init() {
 	}*/
 }
 
+void ShipGame::on_pushButton_12_clicked() {
+
+	if (*ui.czyPion == false) {
+
+		*ui.czyPion = true;
+	}
+	else {
+
+		*ui.czyPion = false;
+	}
+}
+
 void ShipGame::mouseMoveEvent(QMouseEvent *e)
 {
 	std::cout << "event" << std::endl;
@@ -546,6 +558,12 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setFlat(false);
 
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setFlat(false);
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setFlat(false);
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setFlat(false);
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+
 			if (y + 3 <= 9)planszaUser[x][y + 3]->setStyleSheet("background-color: blue");
 			if (y != 0) planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
 			if (y != 0 && y < 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
@@ -553,6 +571,12 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 2]->setStyleSheet("background-color: blue");
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setStyleSheet("background-color: blue");
+
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setStyleSheet("background-color: blue");
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
 			
 			if (y + 3 <= 9)planszaUser[x][y + 3]->setUstawiono();
 			if (y != 0) planszaUser[x][y - 1]->setUstawiono();
@@ -561,6 +585,13 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 2]->setUstawiono();
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setUstawiono();
+
+			if (y + 3 <= 9 && x - 1 >= 0) planszaUser[x - 1][y + 3]->setUstawiono();
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setUstawiono();
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setUstawiono();
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
+
 		}
 		else if (*ui.ilosc == 2) {
 
@@ -571,12 +602,22 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setFlat(false);
 
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setFlat(false);
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setFlat(false);
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+
 			if (y + 2 <= 9)planszaUser[x][y + 2]->setStyleSheet("background-color: blue");
 			if (y != 0) planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
 			if (y != 0) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 2]->setStyleSheet("background-color: blue");
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setStyleSheet("background-color: blue");
+
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
 		
 			if (y + 2 <= 9)planszaUser[x][y + 2]->setUstawiono();
 			if (y != 0) planszaUser[x][y - 1]->setUstawiono();
@@ -584,25 +625,42 @@ void ShipGame::clickEvent(int x, int y) {
 			if (y + 2 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 2]->setUstawiono();
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setUstawiono();
+
+			if (y + 2 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 2]->setUstawiono();
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setUstawiono();
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
 		} else if (*ui.ilosc == 1){
 
 			if (y + 1 <= 9)planszaUser[x][y + 1]->setFlat(false);
 			if (y != 0) planszaUser[x][y - 1]->setFlat(false);
-			if (y != 0 && y < 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setFlat(false);
+			if (y != 0 && y <= 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setFlat(false);
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setFlat(false);
 
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setFlat(false);
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+
 			if (y + 1 <= 9)planszaUser[x][y + 1]->setStyleSheet("background-color: blue");
 			if (y != 0) planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
-			if (y != 0 && y < 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (y >= 0 && y <= 9 && x + 1 <= 9)planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setStyleSheet("background-color: blue");
+
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
 			
 			if (y + 1 <= 9)planszaUser[x][y + 1]->setUstawiono();
 			if (y != 0) planszaUser[x][y - 1]->setUstawiono();
-			if (y != 0 && y < 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (y != 0 && y <= 9 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setUstawiono();
 			if (y + 1 <= 9 && x + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
 			if (y <= 9 && x + 1 <= 9)planszaUser[x + 1][y]->setUstawiono();
+
+			if (y + 1 <= 9 && x - 1 >= 0)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (y <= 9 && x - 1 >= 0)planszaUser[x - 1][y]->setUstawiono();
+			if (y > 0 && x - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
 		} 
 	}
 	else {
@@ -616,34 +674,145 @@ void ShipGame::clickEvent(int x, int y) {
 
 		if (*ui.ilosc == 4) {
 
-			planszaUser[x+4][y]->setUstawiono();
-			if (x != 0) planszaUser[x-1][y]->setUstawiono();
-			if (x != 0 && x <= 10) planszaUser[x + 1][y - 1]->setUstawiono();
-			planszaUser[x + 4][y + 1]->setUstawiono();
-			planszaUser[x + 3][y + 1]->setUstawiono();
-			planszaUser[x + 2][y + 1]->setUstawiono();
-			planszaUser[x + 1][y + 1]->setUstawiono();
-			planszaUser[x][y+1]->setUstawiono();
+			if (x + 4 <= 9)planszaUser[x+4][y]->setUstawiono();
+			if (x-1 != 0) planszaUser[x-1][y]->setUstawiono();
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 4 <= 9 && y + 1 <= 9)planszaUser[x + 4][y + 1]->setUstawiono();
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setUstawiono();
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setUstawiono();
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
+			if (y + 1 <= 9)planszaUser[x][y+1]->setUstawiono();
 
+			if(x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setUstawiono();
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setUstawiono();
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setUstawiono();
+			if (x + 4 <= 9 && y - 1 >= 0)planszaUser[x + 4][y - 1]->setUstawiono();
+
+			if (x + 4 <= 9)planszaUser[x + 4][y]->setFlat(false);
+			if (x - 1 != 0) planszaUser[x - 1][y]->setFlat(false);
+			if (x + 4 <= 9 && y + 1 <= 9)planszaUser[x + 4][y + 1]->setFlat(false);
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setFlat(false);
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setFlat(false);
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setFlat(false);
+			
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setFlat(false);
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setFlat(false);
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setFlat(false);
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setFlat(false);
+			if (x + 4 <= 9 && y - 1 >= 0)planszaUser[x + 4][y - 1]->setFlat(false);
+
+			if (x + 4 <= 9)planszaUser[x + 4][y]->setStyleSheet("background-color: blue");
+			if (x - 1 != 0) planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 4 <= 9 && y + 1 <= 9)planszaUser[x + 4][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setStyleSheet("background-color: blue");
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 4 <= 9 && y - 1 >= 0)planszaUser[x + 4][y - 1]->setStyleSheet("background-color: blue");
 		}
 		else if (*ui.ilosc == 3) {
 
-			planszaUser[x][y + 3]->setUstawiono();
-			if (x != 0) planszaUser[x - 1][y]->setUstawiono();
-			if (y != 0 ) planszaUser[x + 1][y - 1]->setUstawiono();
-			planszaUser[x + 1][y + 3]->setUstawiono();
-			planszaUser[x + 1][y + 2]->setUstawiono();
-			planszaUser[x + 1][y + 1]->setUstawiono();
-			planszaUser[x + 1][y]->setUstawiono();
+
+			if (x - 1 >= 0) planszaUser[x - 1][y]->setUstawiono();
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setUstawiono();
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setUstawiono();
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setUstawiono();
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setUstawiono();
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setUstawiono();
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setUstawiono();
+			if (x + 4 <= 9 && y - 1 >= 0)planszaUser[x + 4][y - 1]->setUstawiono();
+			if (x + 3 <= 9) planszaUser[x + 3][y]->setUstawiono();
+
+			if (x + 3 <= 9) planszaUser[x + 3][y]->setFlat(false);
+			if (y - 1 != 0) planszaUser[x - 1][y]->setFlat(false);
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setFlat(false);
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setFlat(false);
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setFlat(false);
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setFlat(false);
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setFlat(false);
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setFlat(false);
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setFlat(false);
+
+			if (x - 1 != 0) planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9 && y + 1 <= 9)planszaUser[x + 3][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setStyleSheet("background-color: blue");
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9) planszaUser[x + 3][y]->setStyleSheet("background-color: blue");
+
 		}
 		else if (*ui.ilosc == 2) {
 
-			planszaUser[x][y + 2]->setUstawiono();
-			if (x != 0) planszaUser[x - 1][y]->setUstawiono();
-			if (y != 0) planszaUser[x + 1][y - 1]->setUstawiono();
-			planszaUser[x + 1][y + 2]->setUstawiono();
-			planszaUser[x + 1][y + 1]->setUstawiono();
-			planszaUser[x + 1][y]->setUstawiono();
+			if (x - 1 != 0) planszaUser[x - 1][y]->setUstawiono();
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setUstawiono();
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setUstawiono();
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setUstawiono();
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setUstawiono();
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setUstawiono();
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setUstawiono();
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setUstawiono();
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setUstawiono();
+			if (x + 2 <= 9) planszaUser[x + 2][y]->setUstawiono();
+
+			if (x + 2 <= 9) planszaUser[x + 2][y]->setFlat(false);
+			if (x - 1 != 0) planszaUser[x - 1][y]->setFlat(false);
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setFlat(false);
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setFlat(false);
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setFlat(false);
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setFlat(false);
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setFlat(false);
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setFlat(false);
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setFlat(false);
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setFlat(false);
+
+			if (x != 0) planszaUser[x - 1][y]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0 && x + 1 <= 9) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y + 1 <= 9)planszaUser[x + 2][y + 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y + 1 <= 9)planszaUser[x + 1][y + 1]->setStyleSheet("background-color: blue");
+			if (y + 1 <= 9)planszaUser[x][y + 1]->setStyleSheet("background-color: blue");
+
+			if (x - 1 != 0 && y + 1 <= 9)planszaUser[x - 1][y + 1]->setStyleSheet("background-color: blue");
+			if (x - 1 >= 0 && y - 1 >= 0)planszaUser[x - 1][y - 1]->setStyleSheet("background-color: blue");
+			if (y - 1 >= 0)planszaUser[x][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 1 <= 9 && y - 1 >= 0) planszaUser[x + 1][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9 && y - 1 >= 0)planszaUser[x + 2][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 3 <= 9 && y - 1 >= 0)planszaUser[x + 3][y - 1]->setStyleSheet("background-color: blue");
+			if (x + 2 <= 9) planszaUser[x + 2][y]->setStyleSheet("background-color: blue");
 		}
 		else if (*ui.ilosc == 1) {
 
@@ -689,7 +858,7 @@ void ShipGame::on_pushButton_2_clicked() {
 	refreshCount(*ui.ilosc);
 	clickEvent(0, 0);
 	counter--;
-	if (counter == 0) {
+	if (counter == 8) {
 
 		GameMain *game = new GameMain(this->plansza);
 		game->show();

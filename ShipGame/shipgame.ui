@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>582</width>
-    <height>378</height>
+    <width>567</width>
+    <height>392</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,7 +41,7 @@
       <x>0</x>
       <y>0</y>
       <width>566</width>
-      <height>309</height>
+      <height>338</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,0">
@@ -1414,6 +1414,13 @@
          </item>
         </layout>
        </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="text">
+          <string>ZMIANA KIERUNKU</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
@@ -1733,7 +1740,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>582</width>
+     <width>567</width>
      <height>21</height>
     </rect>
    </property>
