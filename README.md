@@ -1,5 +1,5 @@
 # UML
-Program znajduje sie na branchu "final".
+Program znajduje sie na branchu "master".
 UML/Win32/Debug/ w tym katalagu znajduje sie plik .exe z programem klienta.
 W ShipGame znajduja sie wszystkie pliki.
 
